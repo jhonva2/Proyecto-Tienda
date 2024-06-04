@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Transition</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>  
+      <div class="title" id="titulo">
+        <h1>Diseños Olga`s  </h1>
+        <div class="menuderecha">
+          <input class="botonheader" type="text" placeholder="Buscar" />
+        </div>
+      </div>
+      <div class="menuizquierda">
+        <a href="https://www.gogle.es/" alt="Link de Google">Hombre</a>
+        <a href="https://www.gogle.es/" alt="Link de Google">Mujer</a>
+        <br />
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Novedades</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Ropa</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">P&B by Rosalía</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Zapatos</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Accesorios</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Editoriales</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Join Life</a>
+        <br />
+        <a href="https://www.gogle.es/" alt="Link de Google">Promociones</a>
+      </div>
+    </header>
+    <main>
+      <div class="mosaico">
+        <div class="item">
+          <a href="https://www.ejemplo.com">
+            <img
+              src="./man0.png"
+              alt="Imagen 1"
+            />
+          </a>
+          <div class="texto">Texto de la imagen 1</div>
+        </div>
+        <div class="item">
+          <a href="https://www.ejemplo.com">
+            <img
+              src="./man2.jpg"
+              alt="Imagen 1"
+            />
+          </a>          
+          <div class="texto">Texto de la imagen 1</div>
+        </div>
+        <div class="item">
+          <a href="https://www.ejemplo.com">
+            <img
+              src="./woman1.jpg"
+              alt="Imagen 1"
+            />
+          </a>
+          <div class="texto">Texto de la imagen 1</div>
+        </div>
+        <div class="item">
+          <a href="https://www.ejemplo.com">
+            <img
+              src="./woman3.jpg"
+              alt="Imagen 1"
+            />
+          </a>
+          <div class="texto">Texto de la imagen 1</div>
+        </div>
+        <div class="item">
+          <a href="https://www.ejemplo.com">
+            <img
+              src="./woman4.jpg"
+              alt="Imagen 1"
+            />
+          </a>
+          <div class="texto">Texto de la imagen 1</div>
+        </div>
+        <div class="item">
+            <a href="https://www.ejemplo.com">
+              <img
+                src="./woman6.jpg"
+                alt="Imagen 1"
+              />
+            </a>
+            <div class="texto">Texto de la imagen 1</div>
+          </div>
+          <div class="item">
+            <a href="https://www.ejemplo.com">
+              <img
+                src="./woman7.jpg"
+                alt="Imagen 1"
+              />
+            </a>       
+      </div>
+    </main>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <footer>
+      <h1 class="footerh1">10% DESCUENTO</h1>
+      <h2 class="footerh2">Suscríbete en la NewsLetter</h2>
+      <p>
+        ---------------------------------------------------------------------------------------------------------©---------------------------------------------------------------------------------------------------------
+      </p>
+    <div class="footer-links">
+        <a href="https://www.google.es/" alt="Link de mi footer">Ayuda</a>
+        <a href="https://www.google.es/" alt="Link de mi footer">Contacto</a>
+        <a href="https://www.google.es/" alt="Link de mi footer">Tlfno</a>
+        <a href="https://www.google.es/" alt="Link de mi footer">Ayuda</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>  
+    <script>
+function toggleBackground() {
+    if (document.body.classList.contains('blue-gradient')) {
+        document.body.classList.remove('blue-gradient');
+        document.body.classList.add('black-bg');
+    } else {
+        document.body.classList.remove('black-bg');
+        document.body.classList.add('blue-gradient');
+    }
+}
+setInterval(toggleBackground, 3000);
+
+function toggleTextColor() {
+    var titulo = document.getElementById("titulo").querySelector("h1");
+    if (titulo.style.color === "red") {
+        titulo.style.color = "black";
+    } else {
+        titulo.style.color = "red";
+    }
+}
+setInterval(toggleTextColor, 3000);
+    </script>
+</body>
+</html>
